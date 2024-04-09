@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PUP Hymn</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            /* background-image: url("pup-bg.jpg"); */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 50% 75%;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            /* gap: 1rem; */
+            /* margin: 0 auto; */
+            font-family: 'Noto Sans', Tahoma, Geneva, Verdana, sans-serif;
+            padding-right: 1rem;
+            background-color: black;
+
+        }
+
+        .ui {
+            width: 900px;
+        }
+
+        .banner {
+            margin: 1rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(to left, rgb(122, 25, 25), rgb(122, 25, 25), rgb(122, 25, 25), rgb(180, 27, 27), rgb(240, 49, 35), rgb(244, 160, 36));
+            color: white;
+            display: flex;
+            align-items: center;
+            max-height: 100px;
+            gap: 10px;
+            width: 100%;
+            font-family: 'Cinzel', serif;
+            font-weight: 500;
+            border-radius: 100px;
+            /* box-shadow: -10px 5px 5px rgba(84, 83, 81, 0.349); */
+        }
+
+        .lyrics-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #marquee-container {
+            position: relative;
+            /* height: 100vh; */
+            min-height: 750px;
+            width: 720px;
+            background-color: #aacdef;
+
+        }
+
+        #marquee {
+            /* background-color: rgba(255, 255, 255, .50); */
+            backdrop-filter: blur(5px);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: rgb(35, 50, 63);
+
+        }
+
+        #marquee #lyrics {
+            font-family: 'Cinzel', serif;
+            font-size: 20px; 
+            text-align: center;
+            /* text-shadow: 1px 1px #ffffffd1; */
+
+        }
+
+        #pupmain {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .ui {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .details {
+            
+            padding: 2rem;
+            background-color: rgb(31, 32, 33);
+            color: rgba(255, 255, 255, 0.936);
+            box-shadow: 1px 10px 32px rgba(84, 83, 81, 0.229);
+            /* border-radius: 12px; */
+        }
+
+        .thumb-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 1px 1px 32px rgba(7, 76, 63, 0.678);
+
+        }
+
+        .song-details {
+            gap: 1rem;
+            display: flex;
+        }
+
+        .song-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #socmed a {
+            border: 1px solid white;
+            display: flex;
+            /* width: 100px; */
+            gap: 5px;
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        #socmed a img {
+            display: flex;
+            width: 20px;
+        }
+
+        .profile {
+            margin: 1rem 0;
+            padding: 2rem;
+            background-color: rgb(31, 32, 33);
+            color: rgba(255, 255, 255, 0.936);
+            box-shadow: 1px 10px 32px rgba(84, 83, 81, 0.229);
+        }
+
+        .profile-items {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin-left: 2rem;
+            
+        }
+
+        .profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            border: 3px solid rgb(255, 165, 136);
+
+        }
+
+        footer {
+            font-family: 'Noto Sans';
+            font-size: 12px;
+            text-align: center;
+            background-color: rgb(31, 39, 42);
+            color: rgba(255, 255, 255, 0.556);
+            padding: 1rem 0;
+            margin-top: 1rem;
+
+        }
+
+        footer p {
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="lyrics-container">
+
+        <div id="marquee-container">
+            <img src="pupmain.png" id="pupmain" alt="">
+            <marquee id="marquee" width="100%" direction="up" height="400px" scrollamount="1">
+                <pre id="lyrics" > (Instrumental)
+
+
+
+
+
+
+
+
+                    
+                    
+Sintang Paaralan
+
+Tanglaw ka ng bayan
+
+Pandayan ng isip ng kabataan
+
+Kami ay dumating nang salat sa yaman
+
+Hanap na dunong ay iyong alay
+
+
+
+
+Ang layunin mong makatao
+
+Dinarangal ang Pilipino
+
+
+
+
+
+
+
+Ang iyong aral, diwa, adhikang taglay
+
+PUP, aming gabay
+
+Paaralang dakila
+
+PUP, pinagpala
+
+
+
+ 
+Gagamitin ang karunungan
+
+Mula sa iyo, para sa bayan
+
+Ang iyong aral, diwa, adhikang taglay
+
+PUP, aming gabay
+
+Paaralang dakila
+
+PUP, pinagpala
+
+
+
+
+
+
+
+
+
+    </pre>
+            </marquee>
+        </div>
+
+    </section>
+    <div class="ui">
+        <section class="banner">
+            <img src="pup.png" alt="" width="90">
+            <div>
+                <p>Polytechnic University of the Philippines</p>
+                <p style="color: rgba(255, 255, 255, 0.851);">The country's first PolytechnicU</p>
+            </div>
+            <!-- <img src="Globe-256.png" width="40" alt="" style="float: right;"> -->
+            <!-- autoplay -->
+
+        </section>
+
+        <div>
+            <section class="details">
+                <div class="song-details">
+                    <img class="thumb-img" src="thumbnail.jpg" alt="">
+                    <div class="song-text">
+                        <div>
+                            <h1 style="color:rgba(255, 255, 255, 0.901); margin-bottom: 5px;">Imno ng PUP (The PUP Hymn)
+                            </h1>
+                            <p style="color:rgba(215, 251, 251, 0.77)">S. Calabig, S. Roldan, and R. Amaranto</p>
+                        </div>
+                        <audio id="audio" controls autoplay>
+                            <source src="pup.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <div id="socmed">
+                            <a href="https://www.youtube.com/watch?v=Yib_s5UeGvc" target="_blank"
+                                onclick="document.getElementById('audio').pause()">
+                                <img src="yt.png" alt=""> Watch on Youtube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="profile">
+                <h3 style="margin-bottom: 1rem; color: rgb(237, 111, 111); font-weight: 700;">Page Designer</h3>
+                <div>
+                    <!-- <p style="color: rgba(255, 255, 255, .55); font-weight: 700;">01</p> -->
+                    <div class="profile-items">
+                        <img src="syke.jpg" alt="">
+                        <div class="profile-name">
+                            <p style="font-weight: 700; font-size: 16px; margin-bottom: 5px; ">Kenth G. Saya-ang</p>
+                            <p style="font-size: 12px; color:#ffffffc1; margin-bottom: 1rem;">BSCS 3-1N</p>
+                            <div style="font-size: 12px; color:rgb(220, 230, 234)">
+                                As a CS student, I'm passionate about expanding my tech knowledge and am currently focusing on web development with React, learning from free online resources
+                            </div>
+                        </div>
+                        
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- <p>2020-07643-MN-0</p> -->
+            </section>
+        </div>
+       
+
+
+        <footer>
+            <p>Kenth G. Saya-ang | BSCS 3-1N | 2020-07643-MN-0</p>
+            <p>© 1998-2023 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
+        </footer>
+    </div>
+
+
+</body>
+
+<script>
+
+
+    const audio = document.getElementById("audio");
+    const marquee = document.getElementById("marquee");
+
+    audio.addEventListener("play", () => {
+        marquee.start();
+    });
+
+    audio.addEventListener("pause", () => {
+        marquee.stop();
+    });
+
+    audio.addEventListener("timeupdate", scrollMarquee);
+
+    function scrollMarquee() {
+        const currentTime = audio.currentTime;
+        const duration = audio.duration;
+
+        const position = (currentTime / duration) * (marquee.scrollHeight - marquee.clientHeight);
+
+        marquee.scrollTop = position;
+        requestAnimationFrame(scrollMarquee);
+    }
+
+
+</script>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="nav">
+        <h1>PUP Map</h1>
+    </div>
+    <main>
+        <div class="map-container">
+
+            <div class="instruction">
+                <h3>Guide</h3>
+                <p>Hover on a numbered circle to reveal more information about the area.</p>
+            </div>
+            <img src="src/PUP.png" width="700" height="529" usemap="#PUP">
+            <map name="PUP">
+                <area alt="Chapel" shape="circle" coords="344,418, 60" onmouseover="showPopup('Chapel');"
+                    onmouseout="hidePopup('Chapel');" >
+                <area alt="Obelisk" shape="circle" coords="402,235, 15" onmouseover="showPopup('Obelisk');"
+                    onmouseout="hidePopup('Obelisk');">
+                <area alt="Lagoon" shape="poly" coords="242,269 , 286,166, 305, 162, 327, 262"
+                    onmouseover="showPopup('Lagoon');" onmouseout="hidePopup('Lagoon');">
+                <area alt="River" shape="poly" coords="0,525, 137,525, 0,30, 15,30" onmouseover="showPopup('River');"
+                    onmouseout="hidePopup('River');">
+                <area alt="Pool" shape="poly" coords="372, 106, 448,106, 448,68, 372,68"
+                    onmouseover="showPopup('Pool');" onmouseout="hidePopup('Pool');">
+                <area alt="Main" shape="poly"
+                    coords="123,354, 169,281, 250,330, 251,329, 347,283, 348,284, 372,332, 281,338, 278,483, 195,480, 123,354"
+                    onmouseover="showPopup('Main');" onmouseout="hidePopup('Main');">
+                <area alt="Ninoy" shape="poly"
+                    coords="210,60, 169,281, 247,209, 274,201 260,142, 312,123, 306,99, 253,112, 238,54, 210,60"
+                    onmouseover="showPopup('Ninoy');" onmouseout="hidePopup('Ninoy');">
+                <area alt="Ferry" shape="rect"
+                    coords="137, 513, 163,461"
+                    onmouseover="showPopup('Ferry');" onmouseout="hidePopup('Ferry');">
+                <area alt="Oval" shape="poly"
+                    coords="447,407, 468, 455, 542,455, 607,360, 581,212, 516,296 ,447,407 "
+                    onmouseover="showPopup('Oval');" onmouseout="hidePopup('Oval');">
+                <area alt="Ampitheater" shape="circle"
+                    coords="267, 280, 30 "
+                    onmouseover="showPopup('Ampitheater');" onmouseout="hidePopup('Ampitheater');">
+            </map>
+
+            <div class="floating-circle" onclick="showLegend()">
+                <span style="color: white; font-size: 24px;"><i class="fa fa-location-dot"></i></span>
+            </div>
+            <div class="legend-container" id="legendContainer">
+                <div class="legend-title">Hoverable Areas</div>
+                <div class="legend-content">
+                    <ul class="legend-areas">
+                        <li onmouseover="showPopup('Ampitheater');" onmouseout="hidePopup('Ampitheater');">
+                            <div class="circle">1</div>
+                            <div class="location"> Ampitheater</div>
+                        </li>
+                        <li onmouseover="showPopup('Chapel');"
+                        onmouseout="hidePopup('Chapel');">
+                            <div class="circle">11</div>
+                            <div class="location"> Interfaith Chapel</div>
+                        </li>
+                        <li onmouseover="showPopup('Lagoon');" onmouseout="hidePopup('Lagoon');">
+                            <div class="circle">13</div>
+                            <div class="location"> Lagoon</div>
+                        </li>
+                        <li onmouseover="showPopup('Main');" onmouseout="hidePopup('Main');">
+                            <div class="circle">14</div>
+                            <div class="location">PUP Main Building</div>
+                        </li>
+                        <li onmouseover="showPopup('Ninoy');" onmouseout="hidePopup('Ninoy');">
+                            <div class="circle">21</div>
+                            <div class="location"> NALLRC</div>
+                        </li>
+                        <li onmouseover="showPopup('Oval');" onmouseout="hidePopup('Oval');">
+                            <div class="circle">24</div>
+                            <div class="location"> PUP Oval</div>
+                        </li>
+                        <li onmouseover="showPopup('River');"
+                        onmouseout="hidePopup('River');">
+                            <div class="circle">26</div>
+                            <div class="location">Pasig River</div>
+                        </li>
+                        <li onmouseover="showPopup('Ferry');" onmouseout="hidePopup('Ferry');">
+                            <div class="circle">27</div>
+                            <div class="location">Pasig River Ferry (Sta. Mesa Station)</div>
+                        </li>
+                        <li onmouseover="showPopup('Obelisk');"
+                        onmouseout="hidePopup('Obelisk');">
+                            <div class="circle">32</div>
+                            <div class="location">Obelisk</div>
+                        </li>
+                        <li onmouseover="showPopup('Pool');" onmouseout="hidePopup('Pool');">
+                            <div class="circle">37</div>
+                            <div class="location">Swimming Pool</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="popup-container">
+        <div class="popup" id="Ampitheater">
+            <img src="src/Ampitheater.jpg" alt="Ampitheater">
+            <div class="card-text">
+                <h4><b>Amphitheater</b></h4>
+                <p>The PUP Amphitheater is an open-air performance venue situated within the PUP Lagoon which serves as a space for various outdoor events such theatrical performances.</p>
+            </div>
+        </div>
+        <div class="popup" id="Obelisk">
+            <img src="src/Obelisk.jpg" alt="Obelisk">
+            <div class="card-text">
+                <h4><b>Obelisk</b></h4>
+                <p>The Obelisk at the Polytechnic University of the Philippines symbolizes the strength and values of
+                    the institution. It represents their commitment to education, morality, and leadership, supported by
+                    a dedicated system of public service.</p>
+            </div>
+        </div>
+        <div class="popup" id="Chapel">
+            <img src="src/Chapel.jpg" alt="Chapel">
+            <div class="card-text">
+                <h4><b>Interfaith Chapel</b></h4>
+                <p>Interfaith Ecumenical Chapel is a place of worship in Metro Manila. PUP Interfaith Ecumenical Chapel
+                    is situated nearby to Boulder Fountain and the obelisk Flag Pole Hoist Area.</p>
+            </div>
+        </div>
+        <div class="popup" id="Main Gate">
+            <img src="pup_map.png" alt="Avatar">
+            <div class="card-text">
+                <h4><b>Main Gate</b></h4>
+                <p>Main Gate description</p>
+            </div>
+        </div>
+        <div class="popup" id="Lagoon">
+            <img src="src/Lagoon.jpg" alt="Lagoon">
+            <div class="card-text">
+                <h4><b>Lagoon</b></h4>
+                <p>The Lagoon, for some, was just an ordinary mossy creek with trees around and birds chirping for
+                    drama; but this is something special for every PUPian. This was probably the most hung-out place
+                    compared to the rest of the spot in PUP.</p>
+            </div>
+        </div>
+        <div class="popup" id="River">
+            <img src="src/River.jpg" alt="River">
+            <div class="card-text">
+                <h4><b>Pasig River</b></h4>
+                <p>The Pasig River is a water body in the Philippines that connects Laguna de Bay to Manila Bay.</p>
+            </div>
+        </div>
+        <div class="popup" id="Pool">
+            <img src="src/Pool.jpg" alt="Pool">
+            <div class="card-text">
+                <h4><b>Swimming Pool</b></h4>
+                <p>An olympic-sized swimming pool that is capable of handling several swimming classes and student
+                    athlete activities simultaneously.</p>
+            </div>
+        </div>
+        <div class="popup" id="Main">
+            <img src="src/Main.jpg" alt="Main">
+            <div class="card-text">
+                <h4><b>Main Building</b></h4>
+                <p>The Polytechnic University of the Philippines (PUP) Main Building is the central and iconic structure
+                    of the PUP campus located in Manila, Philippines.</p>
+            </div>
+        </div>
+        <div class="popup" id="Oval">
+            <img src="src/Oval.jpg" alt="Oval">
+            <div class="card-text">
+                <h4><b>PUP Track and Field Oval</b></h4>
+                <p>
+                    The PUP Track and Field Oval is a spacious outdoor sports facility located within the university campus. It serves as a dedicated area for various athletic activities, particularly track and field events.</p>
+            </div>
+        </div>
+        <div class="popup" id="Ninoy">
+            <img src="src/Ninoy.jpg" alt="Ninoy">
+            <div class="card-text">
+                <h4><b>Ninoy Aquino Library and Learning Resources Center</b></h4>
+                <p>The Ninoy Aquino Library and Learning Resources Center is the library system of the Polytechnic University of the Philippines composed of libraries providing services to the PUP System.</p>
+            </div>
+        </div>
+        <div class="popup" id="Ferry">
+            <img src="src/Ferry.jpg" alt="Ferry">
+            <div class="card-text">
+                <h4><b>Pasig River Ferry (Sta. Mesa Station)</b></h4>
+                <p>Located in PUP, the Pasig River Ferry Station in Sta. Mesa is one of the designated stops along the Pasig River Ferry route. The station serves as a boarding and disembarking point for students, faculy, and other passengers traveling via the ferry system.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            &copy; 2023 All Rights Reserved | Kenth Saya-ang
+
+
+        </div>
+        <div class="">
+            Activity 5 - PUP Map
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

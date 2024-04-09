@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Camp Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="" id="form">
+
+            <header>
+                <hr>
+
+                <h1 id="title" class="">Summer Camp Registration</h1>
+                <p id="description"><i>Fill in the information below</i></p>
+                <hr>
+                <img src="https://www.smcc.church/wp-content/uploads/2017/10/Family-Camping-Trip-2017-web-banner.jpg"
+                    alt="" style=" user-drag: none; 
+                        user-select: none;
+                        -moz-user-select: none;
+                        -webkit-user-drag: none;
+                        -webkit-user-select: none;
+                        -ms-user-select: none;">
+            </header>
+            <hr>
+            <div class="col">
+                <div class="form-group">
+                    <label for="firstName" id="name-label">Full Name</label>
+                    <div class="col" id="name-group">
+                        <div class="input-row">
+                            <p for="lastName" class="sub-label"> First Name</p>
+                            <input type="text" id="firstName" name="name" class="col-input-first" required>
+                        </div>
+                        <div class="input-row">
+                            <p for="name" class="sub-label"> Last Name</p>
+                            <input type="text" id="lastName" name="name" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Date of Birth</label>
+                    <p for="birthday" class="sub-label"> Date</p>
+                    <input type="date" id="birthday" name="birthday" placeholder="MM-DD-YY" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    Gender
+                </label>
+
+                <div class="radio-group col">
+                    <label>
+                        <input name="gender" value="Female" type="radio" class="input-radio" />
+                        Female
+                    </label>
+                    <label>
+                        <input name="gender" value="Male" type="radio" class="input-radio" />
+                        Male
+                    </label>
+                    <label>
+                        <input name="gender" value="Transgender Female" type="radio" class="input-radio" />
+                        Transgender Female
+                    </label>
+                    <label>
+                        <input name="gender" value="Transgender Male" type="radio" class="input-radio" />
+                        Transgender Male
+                    </label>
+                    <label class="radio-other">
+                        <input name="gender" value="other" type="radio" id="gender-radio-other"
+                            class="input-radio form-radio-other form-radio" />
+                        Not listed
+                    </label>
+                    <label>
+                        <input name="gender" value="Prefer not to answer" type="radio" class="input-radio" />
+                        Prefer not to answer
+                    </label>
+                </div>
+                <input type="text" name="gender-other" id="gender-other-option" class="form-radio-other-input form-textbox input-other"
+                    placeholder="Type your gender">
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label for="email" id="email-label">Email </label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com"
+                        pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" id="phone-label">Phone </label>
+                    <input type="tel" id="phone" name="phone" placeholder="+639123456789" required>
+                </div>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="address" id="phone-label">Address </label>
+                <p class="sub-label"> Street Address</p>
+                <input type="address" id="address" name="address" placeholder required>
+                <p class="sub-label"> Street Address Line 2</p>
+                <input type="address" id="address-2" name="address-2" placeholder>
+                <div class="col">
+                    <div class="form-group inside">
+                        <p for="name" class="sub-label">Region</p>
+                        <select id="region" name="region" required>
+                            <option value="" selected disabled>Select region</option>
+                        </select>
+                    </div>
+                    <div class="form-group inside-2">
+                        <p for="name" class="sub-label"> Province</p>
+                        <select id="province" name="province" required>
+                            <option value="" selected disabled>Please select region first</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group inside">
+                        <p for="name" class="sub-label">City</p>
+                        <select id="city" name="city" required>
+                            <option value="" selected disabled>Please select province first</option>
+                        </select>
+                    </div>
+                    <div class="form-group inside-2">
+                        <p for="name" class="sub-label"> Barangay</p>
+                        <select id="barangay" name="barangay" required>
+                            <option value="" selected disabled>Please select city first</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="sub-label"> Postal / Zip Code</p>
+                <input type="address" id="zip" name="zip" placeholder required>
+            </div>
+            <hr>
+            <!-- 
+                <div class="form-group">
+                    <label>
+                        Type of Work
+                    </label>
+
+                    <div class="col radio-group">
+                        <label><input name="work-type" value="Permanent" type="radio"
+                                class="input-radio" />Permanent</label>
+                        <label><input name="work-type" value="Temporary" type="radio"
+                                class="input-radio" />Temporary</label>
+                        <label><input name="work-type" value="Both" type="radio" class="input-radio" />Both</label>
+                        <label><input name="work-type" value="Other" type="radio" class="input-radio" />Other</label>
+                    </div>
+                </div> -->
+
+            <div class="form-group ">
+                <label>Upload Documents</label>
+                <p for="" class="sub-label">Please upload the following requirements: (1) Medical Consent Form , (2)
+                    Liability Waiver Form.
+                </p>
+                <div class="file-input">
+                    <input type="file" id="upload" name="upload" required>
+                    <label for="upload" class="file-label">
+                        <i class="fa-solid fa-file-arrow-up fa-2x"
+                            style="color: rgb(202, 202, 202); padding: 1rem;"></i>
+                        <span><b>Browse Files</b></span>
+                        <p>Drag and Drop Files here</p>
+                    </label>
+                    <!-- <section class="file-name">No file chosen</section> -->
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Cover Letter of Additonal information</label>
+                <textarea placeholder="Type here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    Accomodation Preferences
+                </label>
+
+                <div class="col radio-group">
+
+                    <label><input name="accomodation" value="Shared Room" type="radio" class="input-radio" />Shared
+                        Room</label>
+                    <label><input name="accomodation" value="Private Room" type="radio"
+                            class="input-radio" />Private Room</label>
+                    <label><input name="accomodation" value="Dormitory" type="radio"
+                            class="input-radio" />Dormitory</label>
+                    <label><input name="accomodation" value="Cabin" type="radio"
+                            class="input-radio" />Cabin</label>
+                    <label><input name="accomodation" value="Hotel" type="radio" class="input-radio" />
+                        Hotel</label>
+                    <label><input name="accomodation" value="Tent" type="radio"
+                            class="input-radio" />Tent</label>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label>
+                    Medical Information
+                </label>
+
+                <div class="radio-group disabilities-group">
+                    <label>
+                        <input name="disabilities" value="I have no disability" type="radio" class="input-radio" />
+                        I have no disability
+                    </label>
+                    <label>
+                        <input name="disabilities"
+                            value="I have two or more impairments and/or disabling medical conditions." type="radio"
+                            class="input-radio" />
+                        I have two or more impairments and/or disabling medical conditions.
+                    </label>
+                    <label>
+                        <input name="disabilities"
+                            value="I have a Specific Learning Difficulty (e.g. Dyslexia/Dyspraxia/AD(H)D)" type="radio"
+                            class="input-radio" />
+                        I have a Specific Learning Difficulty (e.g. Dyslexia/Dyspraxia/AD(H)D)
+                    </label>
+                    <label>
+                        <input name="disabilities"
+                            value="I have a social/communication impairment such as Asperger's syndrome/other autistic spectrum disorder"
+                            type="radio" class="input-radio" />
+                        I have a social/communication impairment such as Asperger's syndrome/other autistic spectrum
+                        disorder
+                    </label>
+                    <label>
+                        <input name="disabilities"
+                            value="I have a long standing illness or health condition such as cancer, HIV, diabetes, chronic heart disease, or epilepsy"
+                            type="radio" class="input-radio" />
+                        I have a long standing illness or health condition such as cancer, HIV, diabetes, chronic
+                        heart disease, or epilepsy
+                    </label>
+                    <label>
+                        <input name="disabilities"
+                            value="I have a physical impairment or mobility issues (e.g. difficulty using arms/using a wheelchair or crutches)"
+                            type="radio" class="input-radio" />
+                        I have a physical impairment or mobility issues (e.g. difficulty using arms/using a
+                        wheelchair or crutches)
+                    </label>
+                    <label>
+                        <input name="disabilities" value="I am deaf or have a serious hearing impairment" type="radio"
+                            class="input-radio" />
+                        I am deaf or have a serious hearing impairment
+                    </label>
+                    <label>
+                        <input name="disabilities"
+                            value="I am blind or have a serious visual impairment uncorrected by glasses" type="radio"
+                            class="input-radio" />
+                        I am blind or have a serious visual impairment uncorrected by glasses
+                    </label>
+                    <label>
+                        <input name="disabilities" value="Prefer not to answer" type="radio" class="input-radio" />
+                        Prefer not to answer
+                    </label>
+                    <label class="radio-other">
+                        <input name="disabilities" value="other" type="radio"
+                            class="input-radio form-radio-other form-radio" />
+                        I have a disability, impairment or medical condition not listed here
+                    </label>
+                    <input type="text" name="disabilities-other" class="input-other form-textbox"
+                        placeholder="Other disabilities" />
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label>
+                        Meal Preference
+                    </label>
+                    <div class="radio-group">
+                        <label><input name="meal" value="Vegetarian" type="radio" class="input-radio" />Vegetarian</label>
+                        <label><input name="meal" value="Vegan" type="radio" class="input-radio" />Vegan</label>
+                        <label><input name="meal" value="Gluten-free" type="radio" class="input-radio" />Gluten-free</label>
+                        <label><input name="meal" value="Dairy-free" type="radio" class="input-radio" />Dairy-free</label>
+                        <label><input name="meal" value="Nut-free" type="radio" class="input-radio" />Nut-free</label>
+                        <label><input name="meal" value="Pescatarian" type="radio" class="input-radio" />Pescatarian</label>
+                        <label><input name="meal" value="Halal" type="radio" class="input-radio" />Halal</label>
+                        <label class="radio-other ">
+                            <input name="meal" value="other" type="radio"
+                                class="input-radio form-radio-other form-radio-other" />Other
+                        </label>
+                    </div>
+                    <input type="text" name="meal" class="form-radio-other-input form-textbox input-other" id="meal_other"
+                        placeholder="What other meal preference do you have?">
+                </div>
+                <div class="form-group">
+                    <label>Allergies:</label>
+                    <div class="checkbox-group">
+                        <label><input name="allergies[]" value="Peanuts" type="checkbox"
+                                class="input-checkbox">Peanuts</label>
+                        <label><input name="allergies[]" value="Tree Nuts" type="checkbox" class="input-checkbox">Tree
+                            Nuts</label>
+                        <label><input name="allergies[]" value="Shellfish" type="checkbox"
+                                class="input-checkbox">Shellfish</label>
+                        <label><input name="allergies[]" value="Fish" type="checkbox" class="input-checkbox">Fish</label>
+                        <label><input name="allergies[]" value="Soy" type="checkbox" class="input-checkbox">Soy</label>
+                        <label><input name="allergies[]" value="Wheat" type="checkbox" class="input-checkbox">Wheat</label>
+                        <label><input name="allergies[]" value="Dairy" type="checkbox" class="input-checkbox">Dairy</label>
+                        <label class="checkbox-other">
+                            <input name="allergies[]" value="other" type="checkbox"
+                                class="input-checkbox form-checkbox-other">Other
+                        </label>
+                    </div>
+                    <input type="text" name="allergies_other" class="form-checkbox-other-input form-textbox input-other"
+                        id="allergies_other" placeholder="Please specify other allergies">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Additonal Notes</label>
+                <textarea placeholder="Type here..."></textarea>
+            </div>
+
+
+            <div class="form-group buttons">
+                <div><button type="submit" id="submit" class="submit-button">Submit</button></div>
+                <div>
+                    <button type="button" class="reset-button"
+                        onclick="formReset()">Reset</button>
+                </div>
+            </div>
+            <hr>
+
+    </div>
+
+    </form>
+</body>
+<script src="script.js"></script>
+
+
+</html>
